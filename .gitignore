@@ -50,3 +50,6 @@ CLAUDE.md
 docs
 .junie
 .claude
+
+vite.config.*.timestamp*
+vitest.config.*.timestamp*
