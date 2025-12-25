@@ -46,3 +46,7 @@ Thumbs.db
 .angular
 
 __screenshots__/
+/docs
+./docs
+CLAUDE.md
+docs
