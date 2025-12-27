@@ -30,7 +30,7 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - run: npm ci
+      - run: npm i --legacy-peer-deps
 
       # Prepend any command with "nx-cloud record --" to record its logs to Nx Cloud
       - run: npx nx-cloud record -- npx nx format:check  --base="remotes/origin/main"

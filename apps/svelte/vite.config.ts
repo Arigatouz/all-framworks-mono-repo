@@ -7,7 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig(() => ({
   root: import.meta.dirname,
-  cacheDir: '../../node_modules/.vite/apps/svelete',
+  cacheDir: '../../node_modules/.vite/apps/svelte',
   server: {
     port: 4200,
     host: 'localhost',
@@ -22,7 +22,7 @@ export default defineConfig(() => ({
   //   plugins: () => [ nxViteTsPaths() ],
   // },
   build: {
-    outDir: '../../dist/apps/svelete',
+    outDir: '../../dist/apps/svelte',
     emptyOutDir: true,
     reportCompressedSize: true,
     commonjsOptions: {
@@ -30,14 +30,14 @@ export default defineConfig(() => ({
     },
   },
   test: {
-    name: 'svelete',
+    name: 'svelte',
     watch: false,
     globals: true,
     environment: 'jsdom',
     include: ['{src,tests}/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     reporters: ['default'],
     coverage: {
-      reportsDirectory: '../../coverage/apps/svelete',
+      reportsDirectory: '../../coverage/apps/svelte',
       provider: 'v8' as const,
     },
   },
