@@ -1,9 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../dist/out-tsc",
-    "declarationMap": false,
-    "emitDeclarationOnly": false
+    "outDir": "../../dist/out-tsc"
   },
   "files": [],
   "exclude": [],

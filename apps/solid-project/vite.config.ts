@@ -15,7 +15,12 @@ export default defineConfig(() => ({
     port: 4300,
     host: 'localhost',
   },
-  plugins: [solidPlugin(), nxViteTsPaths(), nxCopyAssetsPlugin(['*.md']),tailwindcss()],
+  plugins: [
+    solidPlugin(),
+    nxViteTsPaths(),
+    nxCopyAssetsPlugin(['*.md']),
+    tailwindcss(),
+  ],
   // Uncomment this if you are using workers.
   // worker: {
   //  plugins: [ nxViteTsPaths() ],
@@ -34,6 +39,7 @@ export default defineConfig(() => ({
     globals: true,
     environment: 'jsdom',
     include: ['{src,tests}/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+    passWithNoTests: true,
     reporters: ['default'],
     coverage: {
       reportsDirectory: '../../coverage/apps/solid-project',
