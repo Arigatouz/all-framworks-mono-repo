@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 
 const router = createRouter({
-// @ts-ignore
+// @ts-expect-error import.meta.env types
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
